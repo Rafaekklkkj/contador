@@ -1,0 +1,107 @@
+:root {
+    --cor-fundo: #111;
+    --cor-caixa: #222;
+    --cor-texto: #eee;
+    --cor-destaque: #888;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000, #333);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.conteudo-principal {
+    max-width: 900px;
+    width: 95%;
+    background: var(--cor-caixa);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--cor-destaque);
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.botao {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #666;
+}
+
+.botao.ativo {
+    background: var(--cor-destaque);
+    color: #111;
+}
+
+.abas-textos {
+    margin-top: 20px;
+}
+
+.aba-conteudo {
+    display: none;
+}
+
+.aba-conteudo.ativo {
+    display: block;
+}
+
+.aba-conteudo-titulo-principal {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.aba-conteudo-titulo-secundario {
+    font-size: 14px;
+    color: var(--cor-destaque);
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contador-digito {
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 60px;
+}
+
+.contador-digito p:first-child {
+    font-size: 22px;
+    margin: 0;
+}
+
+.contador-digito p:last-child {
+    font-size: 14px;
+    margin: 0;
+    color: var(--cor-destaque);
+}
